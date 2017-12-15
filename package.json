@@ -4,7 +4,7 @@
   "description": "Webpack template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch"
   },
   "author": "P.Vos",
   "license": "ISC",
