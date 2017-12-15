@@ -1,0 +1,15 @@
+{
+  "name": "webpack-2.0-template",
+  "version": "1.0.0",
+  "description": "Webpack template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "P.Vos",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
