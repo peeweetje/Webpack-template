@@ -67,17 +67,6 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-(function webpackMissingModule() { throw new Error("Cannot find module \"is\""); }());
-(function webpackMissingModule() { throw new Error("Cannot find module \"watching\""); }());
-(function webpackMissingModule() { throw new Error("Cannot find module \"the\""); }());
-(function webpackMissingModule() { throw new Error("Cannot find module \"files…\""); }());
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -85,7 +74,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-__webpack_require__(2);
+__webpack_require__(1);
 
 var car = function () {
   function car() {
@@ -106,7 +95,7 @@ var bmw = new car();
 bmw.manufacturer("bmw");
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
