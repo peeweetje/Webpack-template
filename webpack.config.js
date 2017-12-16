@@ -1,8 +1,10 @@
 const webpack = require("webpack");
+const path = require("path");
 
 let config = {
-  entry: "./index.js",
+  entry: "./src/index.js",
   output: {
+    path: path.resolve(__dirname, "./public"),
     filename: "output.js"
   },
   module: {
@@ -14,7 +16,7 @@ let config = {
       },
       {
         test: /\.scss$/, //files ending with .scss
-        loader: ["style-loader", "css-loader", "sass-loader"] //use these loaders
+        loader: ["style-loader", "css-loader", "sass-loader"] //use these loadersj
       }
     ]
   }
