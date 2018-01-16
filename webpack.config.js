@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path"); // nodejs dependency when dealing with paths
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin"); // extract css into dedicated file
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin"); // require webpack plugin
+const OptimzeCSSassets = require('optimize-css-assets-webpack-plugin');
 
 let config = {
   entry: "./src/index.js",
@@ -29,7 +30,6 @@ let config = {
   plugins: [
     // webpack plugins
     new ExtractTextWebpackPlugin("styles.css"), // call the ExtractTextWebpackPlugin constructor and name the css file
-    new webpack.optimize.UglifyJsPlugin() // call the uglify plugin
   ],
   devServer: {
     contentBase: path.resolve(__dirname, "./public"), // A directory or url to serve html content from.
