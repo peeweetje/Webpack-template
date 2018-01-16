@@ -41,3 +41,10 @@ let config = {
 };
 
 module.exports = config;
+
+if (process.env.NODE_ENV === 'production') { // if we're in production mode, here's what happens next
+module.exports.plugins.push(
+  new webpack.optimize.UglifyJsPlugin(), // call the uglify plugin
+  new OptimizeCSSAssets() // call the css optimizer (minfication)
+);
+}
