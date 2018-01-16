@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const path = require("path"); // nodejs dependency when dealing with paths
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin"); // extract css into dedicated file
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin"); // require webpack plugin
-const OptimzeCSSassets = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin'); // require webpack plugin
 
 let config = {
   entry: "./src/index.js",
